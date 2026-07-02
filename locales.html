@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros locales · Inka Grill Express</title>
+  <meta name="description" content="Encuentra el local de Inka Grill Express más cercano en la Toscana, Italia.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#b01e2e">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Inka Grill">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inka Grill Express">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Inka Grill Express · Pollo a la brasa peruano en la Toscana">
+  <meta property="og:description" content="Pollo a la brasa, shawarma y pizza. Pide online con delivery o recojo en la Toscana.">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inka Grill Express">
+  <meta name="twitter:description" content="Pollo a la brasa, shawarma y pizza. Pide online en la Toscana.">
+  <meta name="twitter:image" content="assets/og-cover.jpg">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span class="flame">🔥</span>
+      <span><strong>Delivery GRATIS</strong> desde €25 · Pedido mínimo €10</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Inka Grill Express">
+        <span class="brand-name"><b>Inka Grill</b><span>Express</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="menu.html">Menú</a>
+        <a href="pedidos.html">Mis pedidos</a>
+        <a href="locales.html" class="active">Locales</a>
+      </nav>
+      <button class="mode-pill" id="modePill" aria-label="Cambiar modo de entrega">
+        <span class="mode-ico" id="modeIco">🛵</span>
+        <span class="mode-text">
+          <span class="mode-label" id="modeLabel">Delivery a</span>
+          <span class="mode-value" id="modeValue">Firenze Centro</span>
+        </span>
+      </button>
+      <div class="header-actions">
+        <a href="cuenta.html" class="icon-btn" aria-label="Mi cuenta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <button class="icon-btn" id="cartBtn" aria-label="Carrito de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count hidden">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Nuestros locales</h1>
+      <p>Cuatro casas del sabor peruano en el corazón de la Toscana.</p>
+      <div class="store-status-pill" data-store-status></div>
+    </div>
+  </section>
+
+  <main class="wrap section">
+    <div class="local-grid" id="localGrid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Inka Grill Express">
+          <p>El auténtico pollo a la brasa peruano, con el sabor de la Toscana.</p>
+          <div class="socials" id="socials"></div>
+        </div>
+        <div class="footer-col">
+          <h5>Nuestro menú</h5>
+          <a href="menu.html#pollos">Pollo a la Brasa</a>
+          <a href="menu.html#shawarma">Shawarma</a>
+          <a href="menu.html#pizza">Pizza</a>
+          <a href="menu.html#bebidas">Bebidas</a>
+        </div>
+        <div class="footer-col">
+          <h5>Ayuda</h5>
+          <a href="locales.html">Nuestros locales</a>
+          <a href="pedidos.html">Seguir mi pedido</a>
+          <a href="cuenta.html">Mi cuenta</a>
+          <a href="privacidad.html">Política de Privacidad</a>
+          <a href="cookies.html">Política de Cookies</a>
+          <a href="terminos.html">Términos y Condiciones</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Inka Grill Express.</span>
+        <div class="pays"><span>VISA</span><span>MASTERCARD</span><span>PAYPAL</span><span>SATISPAY</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/locales.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>
